@@ -1,0 +1,202 @@
+{{UCSC}}
+<html>
+<style>
+
+
+#sideMenu, #top_title {display:none;}
+#content { padding:0px; width:90%; margin-top:-7px; margin-left:5%;, margin-right: 5%}
+body {background-color:white; }
+#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
+
+
+#page {
+			width : 80%; 
+			height : 1000px;
+                     margin-left : 10%;
+		}
+
+nav li a {
+	display: block; padding: 15px 25px;
+	color: #e6b800 !important; text-decoration: none;
+       	
+	}
+	nav ul li:hover > ul {
+		display: block;
+
+	}
+
+		.layout {
+			display : inline-block;
+			width : 100%;
+			height : 100%;
+			z-index : 90;
+			vertical-align : middle;
+			line-height : 300px;
+			text-align : center;
+			display: flex;
+			justify-content: center; 
+			align-items: center;
+			-webkit-display: flex;
+			-webkit-justify-content: center; 
+			-webkit-align-items: center;
+                        vertical-align : middle;
+		}
+
+.leadingQuestions { /* Projects */
+                       
+                        width : 100%; 
+			height : 300px;
+                        background-color: yellow;
+                         float:left;
+  
+}
+
+.boxAll {
+clear: both;
+width: 100%
+
+
+height: 10px;
+}
+
+
+.headerbox { /* Main */
+                         float:right;
+                        width : 100%; 
+                        height : 300px;
+                         border-radius: 8px;
+                  
+                         margin-top: 5px;
+                         background-color: red;
+                    background-size:contain;
+                        background-position:center;
+                       background-position: 50% 50%;
+display: inline
+
+clear: both;
+                   
+  
+}
+
+
+
+.box2 { /* Projects */
+                       
+                        width : 50%; 
+			height : 360px;
+                       /* background-color: red;*/
+                         float:left;
+  
+}
+.infobox {
+			width : 50px; 
+			height : 100%
+                        background-color: yellow;
+                      
+		}
+.mainLinks { /* Main */
+                         float:left;
+                        width : 30%; 
+			height : 150px;
+                         border-radius: 8px;
+                         margin-left: 1.53%;
+                         margin-right: 1.53%;
+                         margin-top: 20px;
+                        
+opacity:0.65;
+                         float:left;
+                            text-align:center;
+                           font-size:26px;
+                    background-size:contain;
+                        background-position:center;
+                       background-position: 50% 50%;
+background-repeat: no-repeat;
+}
+
+.mainLinks:hover{
+
+opacity:1.0;
+ 
+    filter: alpha(opacity=80);
+
+}
+
+.subLinks { /* Main */
+                         float:left;
+                        width : 40%; 
+			height : 150px;
+                         border-radius: 8px;
+                         margin-left: 4.5%;
+                         margin-right: 5%;
+                         margin-top: 20px;
+                        
+                         float:left;
+                            text-align:center;
+                           font-size:26px;
+                         background-repeat: no-repeat;
+                      background-color: red;
+                   
+            
+			display: flex;
+			justify-content: center;
+                        vertical-align : center;
+			align-items: center;
+			-webkit-display: flex;
+			-webkit-justify-content: center; 
+			-webkit-align-items: center;
+  
+}
+
+.subLinks:hover{
+
+
+ opacity:0.8;
+    filter: alpha(opacity=80)
+}
+
+</style>
+<div id=page>
+
+<div class = "headerbox" style=" text-align:center; background-color: transparent; background-image: url(http://2017.igem.org/wiki/images/1/16/Ucscbanner.png); background-repeat: no-repeat; height: 100px;" </div> </div>
+
+</div>
+
+<div class="column full_size" >	
+<h1> Welcome to UCSC's iGEM Wiki! </h1>
+<p>Our team is made of 15 motivated interdisciplinary undergraduate students including Biomolecular Engineers, Molecular, Cellular and Developmental Biologists, Biochemists, and Chemical Engineers. We hope to alleviate a range of burdens associated with global malnutrition and contribute to Millennium Development Goals 2 and 3. </p>
+</div> 
+
+<div class="clear"></div>
+
+<div class="column half_size" >	
+<h5>Spirulina </h5>
+<img src="http://spirulinapowdermarket.com/sites/default/files/spirulinahealthbenefits_4_1.jpg">
+
+</div>
+
+<div class="column half_size" >	
+<div class="highlight">
+<h5> Project Description </h5>
+<p>UCSC's 2017 iGEM team recognized how global malnutrition amplifies problems for many low income regions; causing economic burden as well as diseases like blindness, disabilities, and anemia. In hopes to address these crippling medical issues, we are creating a decentralized, self-sustaining biological source of nutrition that could be grown cheaply anywhere in the world. Spirulina is a fast growing, nutrient dense cyanobacteria which is already utilized for nutritional supplementation all over the world. The goal for our team is to optimize Spirulina to make it more accessible and fill the nutritional gaps to make it an effective and complete vitamin. This reflects our ultimate goal: To deliver nutrition to underdeveloped regions.</p> 
+</div>
+</div>
+
+<div class="column half_size" >	
+<h5> Get Involved! </h5>
+<p>You can help us accomplish our goals!  We appreciate any contribution whether ideas, connections, or financial.  We are 100% donation funded, donate <a href=https://crowdfund.ucsc.edu/project/6945>here!</a>We are always looking for creativity and collaborations; if you have an idea to share or a connection with an interested party, please contact us at <b> ucscigem2017@gmail.com</b> </p>
+
+</div> 
+
+<div class="column half_size">
+<h5> What is iGEM? </h5>
+<p> Answered by the team in beautiful Santa Cruz </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jk9ltT2MosQ" frameborder="0" allowfullscreen></iframe>
+
+
+
+<div class="column full_size" >	
+<h6> This website is still in progress. </h6>
+
+</div>
+
+</html>
