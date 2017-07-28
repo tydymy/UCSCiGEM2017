@@ -3,7 +3,11 @@ import numpy as np
 import matplotlib.mlab as mlab
 import matplotlib.pyplot as plt
 from collections import Counter
+'''
+Program for plotting realtive RNA codon frequency vs amino acid. Gene optimization. 
+'''
 
+#Codon table for translation
 rna2aa = {"UUU":"F", "UUC":"F", "UUA":"L", "UUG":"L",
     "UCU":"S", "UCC":"s", "UCA":"S", "UCG":"S",
     "UAU":"Y", "UAC":"Y", "UAA":"STOP", "UAG":"STOP",
@@ -21,17 +25,21 @@ rna2aa = {"UUU":"F", "UUC":"F", "UUA":"L", "UUG":"L",
     "GAU":"D", "GAC":"D", "GAA":"E", "GAG":"E",
     "GGU":"G", "GGC":"G", "GGA":"G", "GGG":"G",}
 
+#import codon table
 codonTable = open("eColiCodon.txt","r")
 
+#Parse frequncies from table
 codTab = {}
 for lines in codonTable:
     tempLine = lines.split(">")
     for i in range(0,len(tempLine),3):
         codTab[tempLine[i]] = float(tempLine[i+1].replace("(",""))
-
+        
+#import DNA sequence
 with open("Ecoli.txt", "r") as seqFile:
     geneSeq = seqFile.read()
     
+#translate to rna and verify sequence is valid
 rnaGene = geneSeq.replace("T", "U")
 rnaGeneSeq = rnaGene.replace("\n", "")
 
@@ -39,7 +47,7 @@ remove_lower = lambda text: re.sub('[a-z]', '', text)
 
 rnaGene = remove_lower(rnaGene)
 
-
+#get frequencies of each codon for later plotting
 aaSeq = ""
 locCodFreq = []
 counterList = []
@@ -51,7 +59,7 @@ for i in range(0, len(geneSeq),3):
 
 aaSeq = remove_lower(aaSeq)
 
-
+#remove none type objects caused by STOP in codon table
 aaSeq = aaSeq.replace("None","")
 aaSeq = aaSeq.replace("STOP", "")
 aaSeq = aaSeq.upper()
@@ -68,6 +76,7 @@ print("# of old codons used:{}\n# of new codons used:{}".format(len(codTab), len
 aaSeqList = []
 locFreq = []
 
+#get aa sequence, plot vs codon frequency list
 lenCodFreq = len(locCodFreq)
 const = lenCodFreq - lenAASeq
 for i in range(0, len(aaSeq)):
@@ -77,6 +86,7 @@ for i in range(0, len(locCodFreq)-const):#-8):
 
 print(len(locCodFreq))
 #print(locCodFreq)
+#syntax for plotting
 # the histogram of the data
 plt.xlabel('AA')
 plt.ylabel('Freq')
